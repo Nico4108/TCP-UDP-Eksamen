@@ -34,10 +34,8 @@ public class Client {
 
             String accptmsg = "com-0 accept " + ip;
             outputStream.writeUTF(accptmsg);
-
         }
         Chatmessages();
-
     }
 
     public void Chatmessages() throws IOException {
@@ -54,5 +52,4 @@ public class Client {
             System.out.println("S: " + resp);
         }
     }
-
 }

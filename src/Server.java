@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.net.UnknownHostException;
 
 public class Server {
 
@@ -59,26 +58,7 @@ public class Server {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
-
-    /*public void first_msg(){
-
-        try {
-
-            String msg1 = inputStream.readUTF();
-            if (msg1.startsWith("msg-0")){
-
-                send_msg(msg1);
-                msg_funktion();
-
-            }
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-    }*/
 
     public void send_msg() throws IOException {
 
@@ -93,10 +73,4 @@ public class Server {
 
         }
     }
-
-    public void msg_funktion(){
-
-
-    }
-
 }
